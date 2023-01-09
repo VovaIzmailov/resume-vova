@@ -1,0 +1,39 @@
+.info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+.about__box {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+.abot__icon {
+  font-size: 1.5rem;
+  margin-bottom: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+}
+
+@media screen and (max-width: 992px) {
+  .about__box {
+    padding: 0.75rem 0.5rem;
+  }
+  .info {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
